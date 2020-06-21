@@ -8,5 +8,6 @@ describe('Hello.vue', () => {
       propsData: { name },
     });
     expect(wrapper.text()).toMatch(`Hello ${name}!`);
+    expect(wrapper).toMatchSnapshot();
   });
 });
